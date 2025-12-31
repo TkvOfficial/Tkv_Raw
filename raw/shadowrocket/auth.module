@@ -1,0 +1,12 @@
+#!name= TKV Network 认证插件
+#!desc= 为 TKV Network 节点提供授权认证服务，只有安装此插件后才能使用来自 TKV Network 的服务
+
+
+[DNS]
+ojbtkv-doh = https://gstatic.tkv.one/KEQRrkH8XAB2cZaYUKLD/dns-query
+
+[DomainSet]
+ojbtkv_domains = ojbtkv.com
+
+[DNS Policy]
+DOMAIN-SUFFIX,ojbtkv.com,ojbtkv-doh
